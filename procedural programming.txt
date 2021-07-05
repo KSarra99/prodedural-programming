@@ -1,0 +1,19 @@
+PROCEDURE dot_product(var t: ARRAY_OF INTEGER[n],n:INTEGER)
+VAR
+v1,v2: vectors of IR:INTEGER;
+ps:INTEGER
+ok:boolean;
+zero:boolean;
+BEGIN
+repeat
+ok:=true;
+ps:=v1*v2;
+for i from 1 to n-1 step 1 do
+if (t[i]>t[i+1]) then
+if (v1[i]=v2[i+1]) then
+ok:=true;
+else zero;
+end if 
+end if
+end for
+END
